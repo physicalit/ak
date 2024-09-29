@@ -100,6 +100,14 @@ button {
   white-space: nowrap;
   z-index: 8;
 }
+a:hover {
+  color: #212b36 !important;
+}
+.home a {
+  /* pointer-events: none; /* Prevent clicking on the link */
+  text-decoration: none; /* Remove any underline */
+  color: inherit; /* Inherit color from parent */
+}
 .services {
   flex-shrink: 0;
   flex-basis: auto;
@@ -113,6 +121,11 @@ button {
   text-align: left;
   white-space: nowrap;
   z-index: 9;
+}
+.services a {
+  /* pointer-events: none; /* Prevent clicking on the link */
+  text-decoration: none; /* Remove any underline */
+  color: inherit; /* Inherit color from parent */
 }
 .software-products {
   flex-shrink: 0;
@@ -128,6 +141,11 @@ button {
   white-space: nowrap;
   z-index: 10;
 }
+.software-products a {
+  /* pointer-events: none; /* Prevent clicking on the link */
+  text-decoration: none; /* Remove any underline */
+  color: inherit; /* Inherit color from parent */
+}
 .digital-products {
   flex-shrink: 0;
   flex-basis: auto;
@@ -141,6 +159,11 @@ button {
   text-align: left;
   white-space: nowrap;
   z-index: 11;
+}
+.digital-products a {
+  /* pointer-events: none; /* Prevent clicking on the link */
+  text-decoration: none; /* Remove any underline */
+  color: inherit; /* Inherit color from parent */
 }
 .logoswe {
   position: absolute;
@@ -616,7 +639,7 @@ button {
   z-index: 53;
   overflow: hidden;
 }
-.flex-row-d {
+.flex-row-dfoot {
   position: relative;
   width: 1099px;
   height: 49px;

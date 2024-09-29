@@ -20,6 +20,6 @@ from AK import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('figma/', views.figma_view, name='figma_view'),
+    path('', views.figma_view, name='figma_view'),
     path('productpage.html', views.figma_prods, name='figma_prods'),
 ]
