@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['172.29.151.159', '192.168.88.82', 'neacsu.h0m3.cyou', 'localhost']
 
-
+CSRF_TRUSTED_ORIGINS = ['https://neacsu.h0m3.cyou']
 # Application definition
 
 INSTALLED_APPS = [
