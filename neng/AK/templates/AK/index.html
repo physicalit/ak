@@ -1,37 +1,131 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-  <span class="our-products">All prods</span>
-  <div class="flex-row">
-    <div class="group"></div>
-    <div class="group-2"></div>
-    <div class="group-3"></div>
+<section class="servicesSection" style="--src:url({% static 'assets/3351d35b5bdb1fca2779db8397949bf3.png' %}); background-attachment: fixed; background-size: cover;">
+  <div class="flexColumnContainer">
+    <h1 class="heroTitleBox_box">
+      <span class="heroTitleBox">
+        <span class="heroTitleBox_span0">
+          {{ slider.title1 }}
+          <br />
+        </span>
+        <span class="heroTitleBox_span1">{{ slider.title2 }}</span>
+      </span>
+    </h1>
+    <h1 class="welcomeMessageTitle">
+      {{ slider.subtitle }}
+    </h1>
   </div>
-  <div class="flex-row-c">
-    <span class="orcad-x-capture">OrCAD X Capture</span><span class="orcad-x-capture-4">OrCAD X Capture</span><span class="orcad-x-capture-5">OrCAD X Capture</span>
+</section>
+
+<section class="productsOverviewSection">
+  <div class="flex_col">
+    <div class="heroTitleContainer">
+      <div class="hero_title1">
+        <h1 class="mainHeading">
+          Our Products
+        </h1>
+      </div>
+    </div>
+    <div class="productDisplayRow">
+      <div class="productColumn1">
+        <div class="productContentBox1" style="--src:url({% static 'assets/756a8593b099d5c6c8a3cb2f0f351ed8.png' %})">
+          <div class="missingComponentPlaceholder1">
+            <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+          </div>
+        </div>
+        <div class="missingComponentPlaceholderColor4">
+          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+        </div>
+        <h2 class="productSubHeading1">OrCAD X Capture</h2>
+      </div>
+      <div class="productColumn2">
+        <div class="productContentBox2" style="--src:url({% static 'assets/756a8593b099d5c6c8a3cb2f0f351ed8.png' %})">
+          <div class="color5">
+            <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+          </div>
+        </div>
+        <div class="missingComponentPlaceholder2">
+          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+        </div>
+        <h2 class="productSubHeading2">OrCAD X Capture</h2>
+      </div>
+      <div class="productColumn3">
+        <div class="productContentBox3" style="--src:url({% static 'assets/756a8593b099d5c6c8a3cb2f0f351ed8.png' %})">
+          <div class="color5">
+            <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+          </div>
+        </div>
+        <div class="missingComponentPlaceholderColor4">
+          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+        </div>
+        <h2 class="productSubHeading3">OrCAD X Capture</h2>
+      </div>
+    </div>
+    <div class="productsDescription">
+      OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.
+    </div>
+    <div class="additionalProductRow">
+      <div class="additionalProductColumn1">
+        <div class="additionalProductContentBox1" style="--src:url({% static 'assets/756a8593b099d5c6c8a3cb2f0f351ed8.png' %})">
+          <div class="color5">
+            <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+          </div>
+        </div>
+        <div class="missingComponentPlaceholderColor4_1">
+          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+        </div>
+        <h2 class="additionalProductSubHeading1">OrCAD X Capture</h2>
+      </div>
+      <div class="additionalProductColumn2">
+        <div class="additionalProductContentBox2" style="--src:url({% static 'assets/756a8593b099d5c6c8a3cb2f0f351ed8.png' %})">
+          <div class="color5">
+            <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+          </div>
+        </div>
+        <div class="missingComponentPlaceholderColor4_2">
+          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+        </div>
+        <h2 class="additionalProductSubHeading2">OrCAD X Capture</h2>
+      </div>
+      <div class="additionalProductColumn3">
+        <div class="additionalProductContentBox3" style="--src:url({% static 'assets/756a8593b099d5c6c8a3cb2f0f351ed8.png' %})">
+          <div class="color5">
+            <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+          </div>
+        </div>
+        <div class="missingComponentPlaceholderColor4_3">
+          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+        </div>
+        <h2 class="additionalProductSubHeading3">OrCAD X Capture</h2>
+      </div>
+    </div>
+    <div class="additionalProductsDescription">
+      OrCAD Capture schematic entry tool for circuit diagrams is one of the world&#x27;s most widely used software for entering and documenting electrical circuits.
+    </div>
+    <div class="loadMoreSection">
+      <div class="loadMoreRow">
+        <div class="loadMoreSubtitle">
+          <h3 class="loadMoreButton">Load more</h3>
+        </div>
+        <img class="productImage" src="{% static 'assets/fd14c4d205e50cfb70cecddc8548a679.svg' %}" alt="alt text" />
+      </div>
+    </div>
   </div>
-  <div class="flex-row-ca">
-    <span class="orcad-capture-schematic">OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.</span><span class="orcad-capture-schematic-6">OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.</span><span class="orcad-capture-schematic-7">OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.</span>
+</section>
+
+<section class="imageDisplaySection"><img class="image6" src="{% static 'assets/08703b7d8b58e14ab4d86fac34dc5687.png' %}" alt="alt text" /></section>
+
+<section class="aboutUsSection" style="--src:url({% static 'assets/video1.gif' %})">
+  <div class="flexColumn">
+    <h1 class="heroTitle">
+      Who We Are
+    </h1>
+    <p class="companyOverview">
+      With a focus on hardware engineering, CAD, library services, simulation and software, Andak Consulting is a dynamic company, established in 2018 as a spin-off entity. With a team boasting over 20 years of experience in the industry, we are committed to delivering exceptional services to our clients, ensuring their success. We have been serving happy customers in the aerospace, semiconductor, nuclear instruments industries and energy sector since 2018. Our team of experts is dedicated to providing top-notch services to meet your needs. Contact us today to learn more about how we can help your business.
+      <br />
+    </p>
   </div>
-  <div class="flex-row-f">
-    <div class="group-8"></div>
-    <div class="group-9"></div>
-    <div class="group-a"></div>
-  </div>
-  <div class="flex-row-a">
-    <span class="orcad-x-capture-b">OrCAD X Capture</span><span class="orcad-x-capture-c">OrCAD X Capture</span><span class="orcad-x-capture-d">OrCAD X Capture</span>
-  </div>
-  <div class="flex-row-b">
-    <span class="orcad-capture-schematic-entry">OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.</span><span class="orcad-capture-schematic-entry-e">OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.</span><span class="orcad-capture-schematic-entry-f">OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.</span>
-  </div>
-  <button class="learn-more-button-10">
-    <span class="load-more-11">Load more</span>
-    <div class="vector-12"></div>
-  </button>
-  <div class="flex-row-13">
-    <div class="image"></div>
-    <div class="image-14"></div>
-  </div>
-  <div class="frame-15"></div>
-  <div class="image-16"></div>
+</section>
 {% endblock %}

@@ -1,20 +1,28 @@
-<div class="ecommerce-navbar">
-  <div class="header">
-    <div class="rectangle"></div>
-    <div class="search-icon">
-      <div class="vector"></div>
-    </div>
-    <div class="nav-menus">
-      <span class="home"><a href="/">Home</a></span>
-      <span class="services"><a href="/productpage.html">Services</a></span>
-      <span class="software-products"><a href="/productpage.html">Software Products</a></span>
-      <span class="digital-products"><a href="/productpage.html">Digital Products</a></span>
-    </div>
-  </div>
-  <div class="logoswe"></div>
-  <button class="learn-more-button">
-    <span class="load-more">Contact us</span>
-    <div class="vector-1"></div>
-  </button>
-  <div class="frame"></div>
-</div>
+<main class="untitled-page main">
+  <section class="homeSection">
+      <div class="contentBox">
+          <div class="flexRow">
+              {% load static %}
+              <figure class="imageContainer"><img class="mainImage" src="{% static 'assets/ac57dbddce89be7220d5c31b05ca2bf2.png' %}" alt="alt text" /></figure>
+              <div class="flexHighlightsRow">
+                  <div class="homeHighlight">
+                      <p class="homeHighlightText"><a href="/">Home</a></p>
+                  </div>
+                  <div class="servicesHighlight">
+                      <p class="servicesHighlightText"><a href="/">Services</a></p>
+                  </div>
+                  <div class="softwareProductsHighlight">
+                      <p class="softwareProductsHighlightText"><a href="/">Software Products</a></p>
+                  </div>
+                  <div class="digitalProductsHighlight">
+                      <p class="digitalProductsHighlightText"><a href="/">Digital Products</a></p>
+                  </div>
+                  <div class="contactUsBox">
+                      <img class="contactImage" src="{% static 'assets/fd14c4d205e50cfb70cecddc8548a679.svg' %}" alt="alt text" />
+                      <p class="contactUsText">Contact us</p>
+                  </div>
+              </div>
+              <img class="additionalImage" src="{% static 'assets/29ca91c9f42a3f0dcf2fbfbbee0ab524.svg' %}" alt="alt text" />
+          </div>
+      </div>
+  </section>

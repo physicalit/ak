@@ -1,0 +1,19 @@
+/* Target the main menu container */
+.homeSection {
+    position: sticky !important; /* Make it stick to the top when scrolling */
+    top: 0; 
+    z-index: 100; /* Ensure it stays on top of other content */
+    background-color: #fff; /* Or your preferred background color */
+  }
+  
+  /* Add a subtle shadow when scrolled */
+  .homeSection.scrolled {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Optional: Add a smooth transition for the shadow */
+  .homeSection {
+    transition: box-shadow 0.3s ease;
+  }
+
+  

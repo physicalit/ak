@@ -1,0 +1,10 @@
+.download__content_box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(198, 198, 198, 0.498);
+  border-radius: 18.5px;
+}
+.download__image4 {
+  margin: 8px 15px 9px;
+  width: 9px;
+}

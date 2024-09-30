@@ -2,21 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>
       {% block title %}
           Andak Consulting
       {% endblock %}
     </title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/UntitledPage.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Download.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ButtonCat.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}" />
     {% block stylesheet %}
     
     {% endblock %}
   </head>
-  <body>
-    <div class="main-container">
+  <body class="flex-column">
+    <main class="untitled-page main">
       {% include 'menu.html' %}
 
       {% block content %}
@@ -24,6 +29,6 @@
       {% endblock %}
 
       {% include 'footer.html' %}
-    </div>
+    </main>
   </body>
 </html>
