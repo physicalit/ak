@@ -12,3 +12,25 @@ class Footer(models.Model):
     description = models.CharField(max_length=250)
     email = models.CharField(max_length=50)
     phone = models.CharField(max_length=50)
+    
+class AboutUs(models.Model):
+    title = models.CharField(max_length=50)
+    description = models.CharField(max_length=650)
+    
+class IndexParagraph(models.Model):
+    content1 = models.CharField(max_length=650)
+    content2 = models.CharField(max_length=650)
+    
+class Product(models.Model):
+    title = models.CharField(max_length=255)
+    img = models.CharField(max_length=150)
+    link = models.CharField(max_length=150)
+    sku = models.CharField(max_length=50, unique=True)
+    description = models.TextField()
+    specifications = models.JSONField(default=list) 
+    PRODUCT_TYPE_CHOICES = (
+        ('digital', 'Digital'),
+        ('physical', 'Physical'))
+    product_type = models.CharField(max_length=10, choices=PRODUCT_TYPE_CHOICES, default='physical')
+    def __str__(self):
+        return self.title

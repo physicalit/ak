@@ -12,16 +12,16 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/fonts.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/UntitledPage.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/IndexPage.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/Download.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/ButtonCat.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ProductPage.css' %}" />
     {% block stylesheet %}
     
     {% endblock %}
   </head>
   <body class="flex-column">
-    <main class="untitled-page main">
       {% include 'menu.html' %}
 
       {% block content %}
@@ -29,6 +29,5 @@
       {% endblock %}
 
       {% include 'footer.html' %}
-    </main>
   </body>
 </html>

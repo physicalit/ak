@@ -3,8 +3,26 @@
   flex-direction: column;
   background-color: #d6c0ac;
   border-radius: 13px;
+  transition: background-color 0.3s ease; /* Add a transition for smooth effect */
 }
+
 .button-cat__image3 {
-  margin: 11px 0 11px 24px;
+  margin: 11px 0 11px 11px;
   width: 95px;
+  color: white;
+  font-weight: bold;
+  font-family: Roboto, Helvetica, Arial, serif; 
+  text-align: center; 
+}
+.button-cat__image3 a:hover {
+  color: #f6f4f0 !important;
+}
+
+.button-cat__content_box4:hover {
+  background-color: #c2b2a3; /* Slightly darker color on hover */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+.button-cat__content_box4:active {
+  background-color: #b09e93; /* Even darker color when pressed */
 }

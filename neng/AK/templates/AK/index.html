@@ -2,22 +2,24 @@
 {% load static %}
 
 {% block content %}
-<section class="servicesSection" style="--src:url({% static 'assets/3351d35b5bdb1fca2779db8397949bf3.png' %}); background-attachment: fixed; background-size: cover;">
-  <div class="flexColumnContainer">
-    <h1 class="heroTitleBox_box">
-      <span class="heroTitleBox">
-        <span class="heroTitleBox_span0">
-          {{ slider.title1 }}
-          <br />
+<main class="untitled-page main">
+  <section class="servicesSection" style="--src:url({% static 'assets/3351d35b5bdb1fca2779db8397949bf3.png' %});">
+    <div class="image-overlay"></div> 
+    <div class="flexColumnContainer">
+      <h1 class="heroTitleBox_box">
+        <span class="heroTitleBox">
+          <span class="heroTitleBox_span0">
+            {{ slider.title1 }}
+            <br />
+          </span>
+          <span class="heroTitleBox_span1">{{ slider.title2 }}</span>
         </span>
-        <span class="heroTitleBox_span1">{{ slider.title2 }}</span>
-      </span>
-    </h1>
-    <h1 class="welcomeMessageTitle">
-      {{ slider.subtitle }}
-    </h1>
-  </div>
-</section>
+      </h1>
+      <h1 class="welcomeMessageTitle">
+        {{ slider.subtitle }}
+      </h1>
+    </div>
+  </section>
 
 <section class="productsOverviewSection">
   <div class="flex_col">
@@ -36,7 +38,7 @@
           </div>
         </div>
         <div class="missingComponentPlaceholderColor4">
-          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+          <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
         </div>
         <h2 class="productSubHeading1">OrCAD X Capture</h2>
       </div>
@@ -47,7 +49,7 @@
           </div>
         </div>
         <div class="missingComponentPlaceholder2">
-          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+          <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
         </div>
         <h2 class="productSubHeading2">OrCAD X Capture</h2>
       </div>
@@ -58,13 +60,13 @@
           </div>
         </div>
         <div class="missingComponentPlaceholderColor4">
-          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+          <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
         </div>
         <h2 class="productSubHeading3">OrCAD X Capture</h2>
       </div>
     </div>
     <div class="productsDescription">
-      OrCAD Capture schematic entry tool for circuit diagrams is one of the world's most widely used software for entering and documenting electrical circuits.
+      {{ indexp.content1 }}
     </div>
     <div class="additionalProductRow">
       <div class="additionalProductColumn1">
@@ -74,7 +76,7 @@
           </div>
         </div>
         <div class="missingComponentPlaceholderColor4_1">
-          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+          <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
         </div>
         <h2 class="additionalProductSubHeading1">OrCAD X Capture</h2>
       </div>
@@ -85,7 +87,7 @@
           </div>
         </div>
         <div class="missingComponentPlaceholderColor4_2">
-          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+          <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
         </div>
         <h2 class="additionalProductSubHeading2">OrCAD X Capture</h2>
       </div>
@@ -96,18 +98,18 @@
           </div>
         </div>
         <div class="missingComponentPlaceholderColor4_3">
-          <div class="button-cat button-cat__content_box4"><img class="button-cat__image3" src="{% static 'assets/ae26e5f99f44ce103778647198de881c.png' %}" alt="alt text" /></div>
+          <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
         </div>
         <h2 class="additionalProductSubHeading3">OrCAD X Capture</h2>
       </div>
     </div>
     <div class="additionalProductsDescription">
-      OrCAD Capture schematic entry tool for circuit diagrams is one of the world&#x27;s most widely used software for entering and documenting electrical circuits.
+      {{ indexp.content2 }}
     </div>
     <div class="loadMoreSection">
       <div class="loadMoreRow">
         <div class="loadMoreSubtitle">
-          <h3 class="loadMoreButton">Load more</h3>
+          <h3 class="loadMoreButton"><a href="">Load more</a></h3>
         </div>
         <img class="productImage" src="{% static 'assets/fd14c4d205e50cfb70cecddc8548a679.svg' %}" alt="alt text" />
       </div>
@@ -117,15 +119,18 @@
 
 <section class="imageDisplaySection"><img class="image6" src="{% static 'assets/08703b7d8b58e14ab4d86fac34dc5687.png' %}" alt="alt text" /></section>
 
-<section class="aboutUsSection" style="--src:url({% static 'assets/video1.gif' %})">
+<section class="aboutUsSection" style="--src:url({% static 'assets/video2.gif' %}); --placeholder:url({% static 'assets/placeholder.jpg' %})"> 
+  <div class="gif-overlay"></div>
+    </div>
   <div class="flexColumn">
     <h1 class="heroTitle">
-      Who We Are
+      {{ aboutus.title }}
     </h1>
     <p class="companyOverview">
-      With a focus on hardware engineering, CAD, library services, simulation and software, Andak Consulting is a dynamic company, established in 2018 as a spin-off entity. With a team boasting over 20 years of experience in the industry, we are committed to delivering exceptional services to our clients, ensuring their success. We have been serving happy customers in the aerospace, semiconductor, nuclear instruments industries and energy sector since 2018. Our team of experts is dedicated to providing top-notch services to meet your needs. Contact us today to learn more about how we can help your business.
+      {{ aboutus.description }}
       <br />
     </p>
   </div>
 </section>
+</main>
 {% endblock %}
