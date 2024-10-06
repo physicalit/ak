@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% if formst %}
+  <div class="alert alert-info alert-dismissible fade show" role="alert">
+    Form submission {{ formst }}.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+{% endif %}
+<main class="untitled-page main">
+  <section class="servicesSection" style="--src:url({% static 'assets/3351d35b5bdb1fca2779db8397949bf3.png' %});">
+    <div class="image-overlay"></div> 
+    <div class="flexColumnContainer">
+      <h1 class="heroTitleBox_box">
+        <span class="heroTitleBox">
+          <span class="heroTitleBox_span0">
+            {{ slider.title1 }}
+            <br />
+          </span>
+          <span class="heroTitleBox_span1">{{ slider.title2 }}</span>
+        </span>
+      </h1>
+      <h1 class="welcomeMessageTitle">
+        {{ slider.subtitle }}
+      </h1>
+    </div>
+  </section>
+
+<section class="productsOverviewSection">
+  <div class="flex_col">
+    <div class="heroTitleContainer">
+      <div class="hero_title1">
+        <h1 class="mainHeading">
+          Our Products
+        </h1>
+      </div>
+    </div>
+    <div class="productDisplayRow">
+      {% for product in products|slice:":4" %}
+        {% comment %} {% if product.product_type == 'software' %} {% endcomment %}
+          <div class="productColumn1">
+            <div class="productContentBox1" style="--src:url({% static 'assets/'|add:product.img %})">
+              <div class="missingComponentPlaceholder1">
+                <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+              </div>
+            </div>
+            <div class="missingComponentPlaceholderColor4">
+              <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
+            </div>
+            <h2 class="productSubHeading1">{{ product.title }}</h2>
+          </div>
+        {% comment %} {% endif %} {% endcomment %}
+      {% endfor %}
+    </div>
+    <div class="productsDescription">
+      {{ indexp.content1 }}
+    </div>
+    <div class="productDisplayRow">
+      {% for product in products|slice:":2" %}
+        {% comment %} {% if product.product_type == 'hardware' %} {% endcomment %}
+          <div class="productColumn1">
+            <div class="productContentBox1" style="--src:url({% static 'assets/'|add:product.img %})">
+              <div class="missingComponentPlaceholder1">
+                <div class="download download__content_box"><img class="download__image4" src="{% static 'assets/ac7741bde34af0a241bfca4bfcfe5f4b.svg' %}" alt="alt text" /></div>
+              </div>
+            </div>
+            <div class="missingComponentPlaceholderColor4">
+              <div class="button-cat button-cat__content_box4"><p class="button-cat__image3"><a href="">Read More</a></p></div>
+            </div>
+            <h2 class="productSubHeading1">{{ product.title }}</h2>
+          </div>
+        {% comment %} {% endif %} {% endcomment %}
+      {% endfor %}
+    </div>
+    <div class="additionalProductsDescription">
+      {{ indexp.content2 }}
+    </div>
+    <div class="loadMoreSection">
+      <div class="loadMoreRow">
+        <div class="loadMoreSubtitle">
+          <h3 class="loadMoreButton"><a href="">Load more</a></h3>
+        </div>
+        <img class="productImage" src="{% static 'assets/fd14c4d205e50cfb70cecddc8548a679.svg' %}" alt="alt text" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="imageDisplaySection"><img class="image6" src="{% static 'assets/08703b7d8b58e14ab4d86fac34dc5687.png' %}" alt="alt text" /></section>
+
+<section class="aboutUsSection specific-aboutUsSection" style="--src:url({% static 'assets/video2.gif' %});"> 
+  <div class="gif-overlay"></div> 
+  <div class="flexColumn">
+    <h1 class="heroTitle">
+      {{ aboutus.title }}
+    </h1>
+    <p class="companyOverview">
+      {{ aboutus.description }}
+      <br />
+    </p>
+  </div>
+</section>
+</main>
+{% endblock %}

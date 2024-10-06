@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.figma_view, name='figma_view'),
     path('productpage.html', views.figma_prods, name='figma_prods'),
+    path('contact/', views.contact, name='contact'),
 ]

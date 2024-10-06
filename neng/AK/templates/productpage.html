@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <main class="product-page main">
+    <section class="digitalProductSection">
+      <!-- This section contains information about digital and physical products. -->
+      <div class="flexRowContainer">
+        <div class="flexColDigitalProducts">
+          <h3 class="digitalProductsSubtitle">Digital Products</h3>
+          <div class="flexColDigitalProductList">
+            <!-- Column containing digital product highlights -->
+            <p class="digitalProductOrCADXCapture">OrCAD X Capture</p>
+            <p class="digitalProductOrCADXProfessionalPlus">OrCAD X Professional Plus</p>
+            <p class="digitalProductOrCADXStandard">OrCAD X Standard</p>
+            <p class="digitalProductGeneric">Product</p>
+            <p class="digitalProductGeneric">Product</p>
+            <p class="digitalProductGeneric">Product</p>
+          </div>
+          <h3 class="physicalProductsSubtitle">Physical Products</h3>
+          <div class="flexColPhysicalProductList">
+            <!-- Column containing physical product highlights -->
+            <p class="physicalProductGeneric">Product</p>
+            <p class="physicalProductGeneric">Product</p>
+            <p class="physicalProductGeneric">Product</p>
+            <p class="physicalProductGeneric">Product</p>
+            <p class="physicalProductGeneric">Product</p>
+            <p class="physicalProductGeneric">Product</p>
+          </div>
+        </div>
+        <div class="flexColProductDetails">
+          <div class="flexRowProductDetails">
+            <div class="flexColProductInfo">
+              <div class="flexRowProductTitle">
+                <div class="flexColProductImage">
+                  <h1 class="productTitleOrCADXCapture">OrCAD X Capture</h1>
+                  <p class="productSKU">SKU: POX050</p>
+                </div>
+                <div class="flexRowProductImages">
+                  <div class="contentBoxProductImage1" style="--src:url({% static 'assets/12dff5a8a24308fe5fe6f4d5763e734c.svg' %})">
+                    <img class="productImage1" src="{% static 'assets/899fb3daabc60546c6dbf2ca17e2b7ef.svg' %}" alt="alt text" />
+                  </div>
+                  <div class="contentBoxProductImage2" style="--src:url({% static 'assets/3ce9f7d191f0cdfa8931d1d20706eb71.svg' %})">
+                    <img class="productImage2" src="{% static 'assets/849e94cb858302173e1880fce543594b.svg' %}" alt="alt text" />
+                  </div>
+                </div>
+              </div>
+              <img class="productImage3" src="{% static 'assets/5a3f48a7a1a89fc0039dd93148809af0.png' %}" alt="alt text" />
+            </div>
+            <div class="flexColProductFeatures">
+              <p class="productFeaturesIntro">OrCAD X Capture includes:</p>
+              <div class="flexColProductFeatureList">
+                <!-- Column containing product features with images -->
+                <div class="contentBoxFeatureLiveBOM">
+                  <p class="featureLiveBOM">&nbsp;&nbsp;&nbsp;&nbsp; Live BOM</p>
+                  <img class="featureImageLiveBOM" src="{% static 'assets/1c67b17b28b5ea8b49be5fd551c2d0ef.svg' %}" alt="alt text" />
+                </div>
+                <div class="contentBoxFeatureLiveBOM">
+                  <p class="featureLiveBOM">&nbsp;&nbsp;&nbsp;&nbsp; Design Variants</p>
+                  <img class="featureImageLiveBOM" src="{% static 'assets/1c67b17b28b5ea8b49be5fd551c2d0ef.svg' %}" alt="alt text" />
+                </div>
+                <div class="contentBoxFeatureLiveBOM">
+                  <p class="featureLiveBOM">&nbsp;&nbsp;&nbsp;&nbsp; Flat and Hierarchical Design</p>
+                  <img class="featureImageLiveBOM" src="{% static 'assets/1c67b17b28b5ea8b49be5fd551c2d0ef.svg' %}" alt="alt text" />
+                </div>
+                <div class="contentBoxFeatureLiveBOM">
+                  <p class="featureLiveBOM">&nbsp;&nbsp;&nbsp;&nbsp; Unified Search</p>
+                  <img class="featureImageLiveBOM" src="{% static 'assets/1c67b17b28b5ea8b49be5fd551c2d0ef.svg' %}" alt="alt text" />
+                </div>
+                <div class="contentBoxFeatureLiveBOM">
+                  <p class="featureLiveBOM">&nbsp;&nbsp;&nbsp;&nbsp; Integration with PSpice</p>
+                  <img class="featureImageLiveBOM" src="{% static 'assets/1c67b17b28b5ea8b49be5fd551c2d0ef.svg' %}" alt="alt text" />
+                </div>
+                <div class="contentBoxFeatureLiveBOM">
+                  <p class="featureLiveBOM">&nbsp;&nbsp;&nbsp;&nbsp; Integrations with SnapMagic</p>
+                  <img class="featureImageLiveBOM" src="{% static 'assets/1c67b17b28b5ea8b49be5fd551c2d0ef.svg' %}" alt="alt text" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="productDescription">
+            <!-- Description of OrCAD Capture functionality -->
+            OrCAD Capture schematic entry tool for circuit diagrams is one of the world&#x27;s most widely used software for entering and documenting electrical circuits. It is outstanding how simple and intuitive the design intentions are captured. OrCAD Capture uses flat or hierarchical circuit diagrams. Via the navigation window the different pages of the circuit diagram can be selected and thematically managed.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

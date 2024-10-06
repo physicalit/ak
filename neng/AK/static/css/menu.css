@@ -16,59 +16,10 @@
     transition: box-shadow 0.3s ease;
   }
 
-  .aboutUsSection {
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    text-align: center; 
-    min-height: 400px; 
-    background-image: var(--placeholder); /* Use placeholder initially */
-    background-attachment: fixed !important; 
-    background-size: cover; 
-    background-position: center; 
-  }
-
-.gif-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(29, 98, 113, 0.2); /* Adjust alpha value for desired opacity */
-  backdrop-filter: blur(2px); /* Adjust blur intensity */
-}
-
 .flexColumn {
   position: relative; /* Ensure content is above the overlay */
   z-index: 1;  
 }
-.aboutUsSection {
-    background-image: var(--src); /* GIF will override placeholder */
-  }
-
-.servicesSection {
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    text-align: center; 
-    min-height: 400px; /* Adjust as needed */
-    background-image: var(--src);
-    background-attachment: fixed !important; 
-    background-size: cover; 
-    background-position: center; 
-  }
-  
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(29, 98, 113, 0.2);  /* Adjust opacity as needed */
-    backdrop-filter: blur(1px);  /* Adjust blur as needed */
-  }
   
 .flexColumnContainer {
     position: relative; /* Ensure content is above the overlay */

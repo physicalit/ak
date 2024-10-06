@@ -37,21 +37,12 @@
           <p class="digitalProductsList_box">
             <span class="digitalProductsList">
               <span class="digitalProductsList_span0">
-                <a>OrCAD X Capture</a>
+                {% for product in products %}
+                {% if product.product_type == 'software' %}
+                <a href="">{{ product.title }}</a>
                 <br />
-                <a>Product 2</a>
-                <br />
-              {% comment %} </span>
-              <span class="digitalProductsList_span1"> {% endcomment %}
-                Product 2
-                <br />
-                Product 2
-                <br />
-                Product 2
-                <br />
-                Product 2
-                <br />
-                Product 2
+                {% endif %}
+                {% endfor %}
               </span>
             </span>
           </p>
@@ -61,21 +52,12 @@
           <p class="physicalProductsList_box">
             <span class="physicalProductsList">
               <span class="physicalProductsList_span0">
-                OrCAD X Capture
+                {% for product in products %}
+                {% if product.product_type == 'hardware' %}
+                <a href="">{{ product.title }}</a>
                 <br />
-                Product 2
-                <br />
-              {% comment %} </span>
-              <span class="physicalProductsList_span1"> {% endcomment %}
-                Product 2
-                <br />
-                Product 2
-                <br />
-                Product 2
-                <br />
-                Product 2
-                <br />
-                Product 2
+                {% endif %}
+                {% endfor %}
               </span>
             </span>
           </p>

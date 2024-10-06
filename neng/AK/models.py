@@ -25,12 +25,21 @@ class Product(models.Model):
     title = models.CharField(max_length=255)
     img = models.CharField(max_length=150)
     link = models.CharField(max_length=150)
+    link_specs = models.CharField(max_length=150, default="link_pdf_placeholder")
     sku = models.CharField(max_length=50, unique=True)
     description = models.TextField()
     specifications = models.JSONField(default=list) 
     PRODUCT_TYPE_CHOICES = (
-        ('digital', 'Digital'),
-        ('physical', 'Physical'))
+        ('hardware', 'Hardware Products'),
+        ('software', 'Software Products '),
+        ('services', 'Services'),
+        ('promotions', 'Promotions'))
     product_type = models.CharField(max_length=10, choices=PRODUCT_TYPE_CHOICES, default='physical')
     def __str__(self):
         return self.title
+
+class ContactSubmission(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+    message = models.TextField()
+    submitted_at = models.DateTimeField(auto_now_add=True)
